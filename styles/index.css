@@ -1,1 +1,123 @@
 @import url("resets.css");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+:root {
+  --display-font: "Anton", sans-serif;
+  --text-font: "Abel", sans-serif;
+  --cu-red: #e6563b;
+  --cu-orange: #eb9d3a;
+  --cu-green: #7cb06c;
+  --cu-teal: #00aba9;
+  --cu-silver: #f0f0f0;
+  --cu-gray: #e6e6e6;
+}
+
+/*
+* Base style
+*
+*/
+
+.icons {
+  max-height: 18px;
+  max-width: 18px;
+}
+.logo {
+  max-width: 85px;
+  max-height: 85px;
+}
+.page-wrapper {
+  background-color: var(--cu-silver);
+  min-height: 100dvh;
+  padding: 0 24px;
+}
+.navbar {
+  font: 400 32px var(--text-font);
+}
+.brand-container a {
+  color: black;
+}
+header {
+  background-color: var(--cu-silver);
+}
+
+h1 {
+  font-family: var(--display-font);
+  font-size: 48px;
+}
+h2 {
+  font-family: var(--display-font);
+  font-size: 32px;
+}
+/*
+* Hamburger Icon
+*/
+
+/* Styling for the hamburger icon */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 10px;
+  border: 2px solid var(--cu-gray);
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+/* Styling the lines for the hamburger */
+.line:first-child {
+  margin-top: 0;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+/*
+*Media Query's
+*/
+
+@media screen and (max-width: 767px) {
+  /* Styles for screens up to 767px wide (typically mobile phones) */
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .container.navbar {
+    justify-content: space-between;
+  }
+  .brand-container .navbar-logo-text {
+    display: none;
+  }
+  .container.navbar {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for screens between 768px and 1023px wide (typically tablets) */
+  .brand-container .navbar-logo-text {
+    display: none;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles for screens between 1024px and 1279px wide (small desktops and laptops) */
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* Styles for screens wider than 1280px (medium to large desktops) */
+  .hamburger {
+    display: none;
+  }
+}
+/* @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { */
+/* Styles for high-resolution displays (e.g., Retina screens) */

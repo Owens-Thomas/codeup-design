@@ -80,6 +80,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -268,6 +269,10 @@ progress {
 
 textarea {
   overflow: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 /**
