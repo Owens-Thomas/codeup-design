@@ -86,8 +86,17 @@ nav ul {
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .title-text {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 .circle-wrapper {
@@ -166,6 +175,7 @@ nav ul {
 .card-image {
   border: 10px solid var(--cu-gray);
   border-radius: 0px;
+  transition: transform 0.5s, filter 3s ease-in-out;
 
   overflow: hidden;
   & img {
@@ -175,8 +185,10 @@ nav ul {
     &:hover {
       filter: brightness(100%);
       transform: scale(1.5);
-      transition-delay: 0.2s;
     }
+  }
+  &:hover {
+    border: 10px solid var(--cu-green);
   }
 }
 
@@ -200,15 +212,17 @@ nav ul {
   font-family: var(--display-font);
   font-size: 24px;
   font-weight: 700;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background-color: var(--cu-gray);
-  }
 }
 .text {
   margin-top: 30px;
 }
-
+.card.article-card {
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.472);
+  }
+}
 /*
 * Hamburger Icon
 */
