@@ -16,13 +16,14 @@
     <!--Start of Header-->
     <header>
       <nav class="navbar">
-        <div class="container navbar d-flex">
+        <div class="container navbar d-flex align-items-center gap-5">
           <div class="brand-container">
             <a class="navbar-brand" href="#">
               <img src="./assets/logo.png" alt="design-logo" class="logo" />
             </a>
             <a class="navbar-logo-text" href="#"> codeup design </a>
           </div>
+          <!--Start of hamburger/navbar-->
           <div class="navbar-menu">
             <div class="hamburger rounded">
               <div class="line"></div>
@@ -30,12 +31,22 @@
               <div class="line"></div>
             </div>
             <!--navbar menu items-->
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div id="menu">
+              <ul class="d-flex gap-4">
+                <li>
+                  <a href="#">SERVICE</a>
+                </li>
+                <li>
+                  <a href="#">WORK</a>
+                </li>
+                <li>
+                  <a href="#">BLOG</a>
+                </li>
+                <li>
+                  <a href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -43,13 +54,187 @@
     <!--Start of Hero-->
     <div class="page-wrapper">
       <div class="container hero-container">
-        <div class="row align-items-center">
+        <div class="row align-items-center gap-5">
+          <!--Heading Texts-->
           <div class="title-text d-flex flex-column align-items-center">
             <h1 class="text-center">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-            <h2>From park city, utah</h2>
+            <h2>FROM PARK CITY, UTAH</h2>
           </div>
+          <!--Circle's-->
+          <div class="circle-wrapper d-flex justify-content-center">
+            <div class="circle red">
+              <span>Design</span>
+            </div>
+            <div class="circle orange">
+              <span>Develop</span>
+            </div>
+            <div class="circle green">
+              <span> Support </span>
+            </div>
+            <div class="circle teal">
+              <span>Host</span>
+            </div>
+          </div>
+          <hr />
         </div>
       </div>
+      <section class="container section-container">
+        <div class="row content-row">
+          <!--Start of main content-->
+          <div
+            class="content-headers d-flex flex-row align-items-center justify-content-center text-center my-4"
+          >
+            <div class="col-md-8 content-heading">
+              <h3>SELECTED WORK</h3>
+            </div>
+            <div class="col-md-4 article-heading">
+              <h3>THE LAST</h3>
+            </div>
+          </div>
+          <div class="col-md-4 content-wrapper">
+            <!--First Card-->
+            <div class="card card-wrapper first-card my-2">
+              <div class="card card-image">
+                <img src="./assets/images/apple-ipad.jpg" />
+              </div>
+              <div
+                class="card card-bottom d-flex flex-row justify-content-between"
+              >
+                <h3>FEATURED PROJECT</h3>
+                <div class="circle-wrapper-icon d-flex justify-content-center">
+                  <div class="circle-icon red">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon orange">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon green">
+                    <span>S</span>
+                  </div>
+                  <div class="circle-icon teal">
+                    <span>H</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Second Card-->
+            <div class="card card-wrapper second-card my-2">
+              <div class="card card-image">
+                <img src="./assets/images/macbook.jpg" />
+              </div>
+              <div
+                class="card card-bottom d-flex flex-row justify-content-between align-items-start"
+              >
+                <h3>FEATURED PROJECT</h3>
+                <div class="circle-wrapper-icon d-flex justify-content-center">
+                  <div class="circle-icon red">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon orange">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon green">
+                    <span>S</span>
+                  </div>
+                  <div class="circle-icon teal">
+                    <span>H</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Start of col 2 main content-->
+          <div class="col-md-4 content-wrapper">
+            <!--Third Card-->
+            <div class="card card-wrapper third-card my-2">
+              <div class="card card-image">
+                <img src="./assets/images/man.jpg" />
+              </div>
+              <div
+                class="card card-bottom d-flex flex-row justify-content-between align-items-start"
+              >
+                <h3>FEATURED PROJECT</h3>
+                <div class="circle-wrapper-icon d-flex justify-content-center">
+                  <div class="circle-icon red">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon orange">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon green">
+                    <span>S</span>
+                  </div>
+                  <div class="circle-icon teal">
+                    <span>H</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fourth Card-->
+            <div class="card card-wrapper third-card my-2">
+              <div class="card card-image">
+                <img src="./assets/images/security.jpg" />
+              </div>
+              <div
+                class="card card-bottom d-flex flex-row justify-content-between align-items-start"
+              >
+                <h3>FEATURED PROJECT</h3>
+                <div class="circle-wrapper-icon d-flex justify-content-center">
+                  <div class="circle-icon red">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon orange">
+                    <span>D</span>
+                  </div>
+                  <div class="circle-icon green">
+                    <span>S</span>
+                  </div>
+                  <div class="circle-icon teal">
+                    <span>H</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Start of articles content-->
+          <div class="col-md-4 articles-wrapper">
+            <!--First Article-->
+            <div class="card article-card first-card my-2">
+              <div class="card card-top flex-row gap-4">
+                <img
+                  src="./assets/images/mobile-phone.jpg"
+                  alt="mobile-phone"
+                />
+                <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+              </div>
+            </div>
+            <!--Second Article-->
+            <div class="card article-card second-card my-2">
+              <div class="card card-top flex-row gap-4">
+                <img src="./assets/images/head.jpg" alt="mobile-phone" />
+                <h3>NIBBLER AWESOME WEBSITE TESTING</h3>
+              </div>
+            </div>
+            <!--Third Article-->
+            <div class="card article-card second-card my-2">
+              <div class="card card-top flex-row gap-4">
+                <img src="./assets/images/ipad.jpg" alt="mobile-phone" />
+                <h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
+              </div>
+            </div>
+            <!--TWEET Article-->
+            <div class="text">
+              <h3>LAST TWEET</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                ex. Nesciunt ex odit et eveniet, accusamus, deleniti aperiam
+                nisi obcaecati a aliquid vero quasi quo saepe architecto
+                perferendis nostrum porro?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script
@@ -57,5 +242,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
