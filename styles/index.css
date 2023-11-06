@@ -171,6 +171,9 @@ nav ul {
   border: unset;
   border-radius: unset;
   cursor: pointer;
+  & img {
+    max-height: 225px;
+  }
 }
 .card-image {
   border: 10px solid var(--cu-gray);
